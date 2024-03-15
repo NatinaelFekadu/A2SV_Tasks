@@ -1,3 +1,5 @@
+import { Button } from "./Button";
+
 interface Props {
   title: string;
   subtitle: string;
@@ -13,16 +15,16 @@ export const Card = ({ title, subtitle, description, image }: Props) => {
         <p className=" text-gray-400 font-epilogue py-2 text-sm">{subtitle}</p>
         <p className="py-2 font-epilogue ">{description}</p>
         <div className="py-2 flex gap-x-1.5 items-center font-epilogue">
-          <span className="bg-green-50 text-green-400 text-xs font-medium  px-3.5 py-2 rounded-full">
+          <Button class_name="bg-green-50 text-green-400 text-xs font-medium  px-3.5 py-2 rounded-full">
             In Person
-          </span>
+          </Button>
           <span className="text-4xl font-thin text-blue-200">|</span>
-          <span className=" text-yellow-500 border border-yellow-500 text-xs font-medium  px-3.5 py-1.5 rounded-full">
+          <Button class_name=" text-yellow-500 border border-yellow-500 text-xs font-medium  px-3.5 py-1.5 rounded-full">
             Education
-          </span>
-          <span className=" text-blue-800 border border-blue-500 text-xs font-medium  px-5 py-1.5 rounded-full ">
+          </Button>
+          <Button class_name=" text-blue-800 border border-blue-500 text-xs font-medium  px-5 py-1.5 rounded-full ">
             IT
-          </span>
+          </Button>
         </div>
       </div>
     </div>
