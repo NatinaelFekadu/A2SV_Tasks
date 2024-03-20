@@ -16,7 +16,7 @@ const JobDetail = ({ params }: Props) => {
   const job = getJob(parseInt(JobId));
   return (
     <>
-      <div className="flex justify-between items-center bg-white shadow-md rounded-3xl p-5 m-10">
+      <div className="flex-row md:flex justify-between items-center bg-white shadow-md rounded-3xl p-2 md:p-5 md:m-10">
         <div className="flex gap-4 ">
           <img
             src={job!.imageUrl}
